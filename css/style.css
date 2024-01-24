@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main__crypt{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__crypt input{
+    margin-top: 10vh;
+    max-width: auto;
+    height: 60%;
+}
+
+.lateral{
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lateral__main{
+    margin: 0;
+}
+
+.lateral img {
+    max-width: 60%;
+    height: 60%;
+}
