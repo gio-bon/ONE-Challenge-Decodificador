@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root{
     --gray-dark1: #3D3B40;
@@ -47,10 +48,25 @@ header img{
     flex-direction: column;
 }
 
-.main__crypt textarea{
-    margin-top: 5vh;
+#entrada-txt{
+    margin-top: 1vh;
     max-width: auto;
-    height: 60%;
+    height: 50%;
+    background-color: var(--gray-dark1);
+    border: none;
+    color: var(--white1);
+    font-size: 2rem;
+    outline: none;
+}
+
+label{
+    color: var(--gray-white);
+}
+
+#chave-txt{
+    margin-top: 1vh;
+    max-width: auto;
+    height: 10%;
     background-color: var(--gray-dark1);
     border: none;
     color: var(--white1);
@@ -71,8 +87,8 @@ header img{
 .lateral__main{
     padding: 5vh 0;
     text-align: center;
-    background-color: var(--gray-dark2);
-    border: 5px dashed var(--gray-dark1);
+    background: linear-gradient(45deg, var(--blue1), var(--red1));
+    border: 12px dashed var(--white1);
     height: 70%;
     width: 80%;
     margin-bottom: 40vh;
@@ -125,6 +141,11 @@ header img{
     color: var(--white1);
 }
 
+#botaoCopyResp:hover {
+    background-color: var(--gray-dark1);
+    color: var(--white1);
+}
+
 .main__crypt span{
     padding: 0 2vh;
     color: var(--gray-white);
@@ -134,4 +155,26 @@ header img{
 #logo{
     filter: brightness(2);
     filter: linear-gradient(90deg, #3498db, #e74c3c);;
+}
+
+#resposta{
+    max-width: auto;
+    background-color: var(--gray-dark1);
+    font-family: 'Source Code Pro', monospace;
+    border: none;
+    color: var(--white1);
+    outline: none;
+    white-space: pre-wrap;
+}
+
+#botaoCopyResp{
+    margin-top: 2vh;
+    border: none;
+    height: 3vh;
+    width: 50%;
+    background-color: #525CEB;
+    color: var(--white1);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
 }
